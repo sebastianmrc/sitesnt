@@ -1,0 +1,78 @@
+	<!DOCTYPE html>
+<html>
+ <head>
+  <script src="siteinternet.js"> </script>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="Site_Internet.css" />
+ <title>Roland-Garros | Site (Pas) Officiel</title>
+ </head>
+ <body class="accueil">
+ <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="Page1_Accueil_Site_Internet.html">Accueil</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    
+                    <li><a href="Page5_Histoire_Site_Internet.html">Histoire</a></li>
+                    <li><a href="Page2_ComplexeSportif_Site_Internet.html">Complexe Sportif</a></li>
+                    <li><a href="Page3_Joueurs_Site_Internet.html">Joueurs</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div style="height: 500px">
+        <!-- just to make scrolling effect possible -->
+			<h2 class="myH2">Roland-Garros</h2>
+			
+				<p class="myP">
+				
+				Bonjour et bienvenue sur un site (pas) officiel de <em>Roland-Garros</em>, le tournoi de tennis sur terre battue du Grand Chelem !
+				Vous allez retoruvez 3 parties qui sont : 
+<h2 class="myH3">
+<ul>
+<li><p>son histoire </p></li>
+<li><p>ses complexes sportifs </p></li>
+<li><p>le classement des joueurs (et joueuses !!) </p></li>
+</ul>
+</h2>
+			</p>
+		
+			
+    </div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+ <span>
+ 
+ 
+ <p><h2> <a href="Page4_Cookies_Site_Internet.html">Cookies</a>
+ -
+ 
+ -
+ <a href="https://www.rolandgarros.com/">Site officiel</a> </h2></p>
+ </span>
+ </body>
+</html>

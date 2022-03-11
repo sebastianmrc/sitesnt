@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script src="siteinternet.js"> </script>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="Site_Internet.css" />
+ <title>Roland-Garros | Site (Pas) Officiel</title>
+ </head>
+ <body>
+ <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="Page1_Accueil_Site_Internet.html">Accueil</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="Page5_Histoire_Site_Internet.html">Histoire</a></li>
+                    <li><a href="Page2_ComplexeSportif_Site_Internet.html">Complexe Sportif</a></li>
+                    <li><a href="Page3_Joueurs_Site_Internet.html">Joueurs</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+			<h2 class="myH2">Roland-Garros | Complexe Sportif</h2>
+				<p class="myP">
+				<ol>
+<h2 class="myH3">
+ Aller directement à la partie traitant de :<br />
+ <li><a href="#localisation">Localisation</a></li>
+ <li><a href="#description">Description</a><br />
+</ol>
+ <h2><p>Bonjour et bienvenue sur la page "Complexe Sportif" !</p>
+ <p>Sur cette page, nous vous en disons un peu plus sur le complexe sportif de Roland-Garros.</p><br />
+ <h2><h2 id="localisation">Localisation</h2>
+<h3><p>Le complexe sportif de Roland-Garros, ou Stade Roland-Garros, se trouve à l'ouest de Paris, près de la porte d'Auteuil.</p>
+<p>Pour connaître l'emplacement exact du complexe sportif de Roland-Garros, cliquez sur ce lien. <a href="https://www.bing.com/maps?q=stade+roland+garros&FORM=HDRSC6"> Localisation </a>.</p><br />
+</h3>
+<h2 id="description">Description</h2>
+<h3><p>Le stade Roland-Garros, construit en 1927, accueille tous les ans les Internationaux de France de tennis.</p>
+<p>Il regroupe au total 18 courts. Les trois plus grands sont le court Philippe-Chatrier (ou court central), le court Suzanne-Lenglen et le court Simonne-Mathieu.</p>
+</h3>
+<a href="C:\Users\myria\OneDrive\Escritorio\sebastian\TEST\imageRGC_si.png"><img src="C:\Users\myria\OneDrive\Escritorio\sebastian\TEST\mini-imageRGC_si.png"alt="Plan du complexe" title="Cliquez pour agrandir" /></a></p>
+<h3><p> Plan du complexe sportif Roland-Garros. N'hésitez pas à cliquer sur l'image afin de voir nettement mieux le plan.</p>
+</h3>
+<br /><br />
+</h2>
+</h2>
+				
+			</p>
+    </div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+ </body>
